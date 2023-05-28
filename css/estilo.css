@@ -1,45 +1,182 @@
-* {
-    font-family: Arial;
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-div {
-    border-radius: 10px;
-    width: 800px;
-    padding: 5px;
-    margin-top: 5px;
-}
-
+/* Contenedor principal */
 .container {
-    width: 830px;
-    text-align: justify;
-    padding-left: 10px;
-    border: 4px dotted black;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.description {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+/* Encabezado */
 .header {
-    width: 280px;
-    background-color: rgba(132, 136, 136, 0.753);
-    padding-left: 30px;
-    margin: 5px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.DatosPersonales {
-    width: 400px;
-    background-color: rgb(183, 236, 238);
-    padding-left: 10px;
+.header h1 {
+    font-size: 30px;
+    color: #333;
+    margin: 0;
 }
 
-.Experiencia {
-    background-color: rgb(205, 243, 198);
-    padding-left: 10px;
+.header p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
 }
 
-.formacion1 {
-    background-color: rgb(250, 213, 181);
-    padding-left: 10px;
+/* Sección de información personal */
+.personal-info {
+    margin-bottom: 30px;
 }
 
-.formacion2 {
-    background-color: rgb(254, 200, 154);
-    padding-left: 10px;
+.personal-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.personal-info p {
+    font-size: 16px;
+    margin: 0;
+    color: #666;
+}
+
+/* Estilos de enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Estilos de iconos */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Estilos de redes sociales */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+/* Experiencia laboral */
+.experience {
+    margin-bottom: 30px;
+}
+
+.experience h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience li {
+    margin-bottom: 15px;
+}
+
+.experience li .job-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.experience li .company {
+    color: #666;
+}
+
+.experience li .dates {
+    color: #999;
+}
+
+/* Educación y formación */
+.education {
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.education li {
+    margin-bottom: 15px;
+}
+
+.education li .degree {
+    font-weight: bold;
+    color: #333;
+}
+
+.education li .institution {
+    color: #666;
+}
+
+.education li .dates {
+    color: #999;
+}
+
+/* Proyectos */
+.projects {
+    margin-bottom: 30px;
+}
+
+.projects h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li {
+    margin-bottom: 15px;
+}
+
+.projects li .degree {
+    font-weight: bold;
+    color: #333;
+}
+
+.projects li .institution {
+    color: #666;
+}
+
+.projects li .dates {
+    color: #999;
 }

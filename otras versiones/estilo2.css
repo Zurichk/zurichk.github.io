@@ -1,0 +1,45 @@
+* {
+    font-family: Arial;
+}
+
+div {
+    border-radius: 10px;
+    width: 800px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.container {
+    width: 830px;
+    text-align: justify;
+    padding-left: 10px;
+    border: 4px dotted black;
+}
+
+.header {
+    width: 280px;
+    background-color: rgba(132, 136, 136, 0.753);
+    padding-left: 30px;
+    margin: 5px;
+}
+
+.DatosPersonales {
+    width: 400px;
+    background-color: rgb(183, 236, 238);
+    padding-left: 10px;
+}
+
+.Experiencia {
+    background-color: rgb(205, 243, 198);
+    padding-left: 10px;
+}
+
+.formacion1 {
+    background-color: rgb(250, 213, 181);
+    padding-left: 10px;
+}
+
+.formacion2 {
+    background-color: rgb(254, 200, 154);
+    padding-left: 10px;
+}
