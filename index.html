@@ -25,23 +25,27 @@
         </div>
 
         <div class="personal-info">
-            <h2>Información Personal</h2>
-            <p>Dirección: Alicante, España</p>
-            <p>Teléfono: 618984169</p>
-            <p>Email: <a href="mailto:zurich85aep@gmail.com">zurich85aep@gmail.com</a></p>
-            <div class="social-icons">
-                <a href="https://www.youtube.com/channel/UCa9c3-J_onhqTzerBmbXWBw" target="_blank">
-                    <img src="iconos/youtube.png" alt="YouTube" class="icon">
-                </a>
-                <a href="https://www.linkedin.com/in/adri%C3%A1n-esp%C3%AD-pe%C3%B1a-a74304185/" target="_blank">
-                    <img src="iconos/linkedin.png" alt="LinkedIn" class="icon">
-                </a>
+            <h2><span class="toggle-button" id="toggle-icon1">&#9660;</span> Información Personal </h2>
+
+            <div class="info-content">
+                <p>Dirección: Alicante, España</p>
+                <p>Teléfono: 618984169</p>
+                <p>Email: <a href="mailto:zurich85aep@gmail.com">zurich85aep@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/channel/UCa9c3-J_onhqTzerBmbXWBw" target="_blank">
+                        <img src="iconos/youtube.png" alt="YouTube" class="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/adri%C3%A1n-esp%C3%AD-pe%C3%B1a-a74304185/" target="_blank">
+                        <img src="iconos/linkedin.png" alt="LinkedIn" class="icon">
+                    </a>
+                </div>
             </div>
         </div>
 
         <div class="experience">
-            <h2>Experiencia Laboral</h2>
-            <ul>
+            <!--style="border-left: 1px solid rgb(60, 178, 214); border-top: 1px solid rgb(60, 178, 214); padding: 10px;">-->
+            <h2> <span class="toggle-button" id="toggle-icon2">&#9660;</span> Experiencia Laboral</h2>
+            <ul class="experienceClass">
                 <li>
                     <p class="job-title">FCT (Practicas empresa) CFGS</p>
                     <p class="company">Lãberit</p>
@@ -97,8 +101,8 @@
         </div>
 
         <div class="education">
-            <h2>Formación Académica</h2>
-            <ul>
+            <h2><span class="toggle-button" id="toggle-icon3">&#9660;</span> Formación Académica</h2>
+            <ul class="educationClass">
                 <li>
                     <p class="degree">Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Multiplataformas
                         (DAM)</p>
@@ -142,8 +146,9 @@
         </div>
 
         <div class="education">
-            <h2>Formación complementaria con certificado</h2>
-            <ul>
+            <h2><span class="toggle-button" id="toggle-icon4">&#9660;</span> Formación complementaria con certificado
+            </h2>
+            <ul class="educationCCClass">
                 <li>
                     <p class="degree">JavaScript Básico</p>
                     <p class="institution">OpenBootCamp <a href="https://campus.open-bootcamp.com/">Web</a>
@@ -201,7 +206,8 @@
                     <p class="institution">Educ@tic GAP PUE S.L.</p>
                     <p class="dates">60 horas - 2020</p>
                     <p><i><a href="titulos/Otra/firmadigital.JPG" target="_blank"
-                                rel="firmadigital.JPG">Certificado</a></i></p>
+                                rel="firmadigital.JPG">Certificado</a></i>
+                    </p>
                 </li>
                 <li>
                     <p class="degree">Primeros Auxilios y Prevención de Riesgos Laborales</p>
@@ -235,13 +241,27 @@
             </ul>
         </div>
         <div class="education">
-            <h2>Formación complementaria sin certificado</h2>
-            <ul>
+            <h2><span class="toggle-button" id="toggle-icon5">&#9660;</span> Formación complementaria sin certificado
+            </h2>
+            <ul class="educationSCClass">
                 <li>
-                    <p class="degree">Flutter</p>
-                    <p class="institution">OpenBootCamp <a href="https://campus.open-bootcamp.com/">Link</a>
+                    <p class="degree">Introducción a Big Data</p>
+                    <p class="institution">OpenBootCamp <a
+                            href="https://campus.open-bootcamp.com/cursos/19/leccion/400">Link</a>
                     </p>
                     <p class="dates">Actualmente</p>
+                </li>
+                <li>
+                    <p class="degree">Flutter</p>
+                    <p class="institution">OpenBootCamp <a href="https://campus.open-bootcamp.com/cursos/86">Link</a>
+                    </p>
+                    <p class="dates">Actualmente</p>
+                </li>
+                <li>
+                    <p class="degree">Dart & Introducción a Flutter</p>
+                    <p class="institution">Udemy <a href="https://www.udemy.com/course/dart-flutter-gratis/">Link</a>
+                    </p>
+                    <p class="dates">Julio 2023</p>
                 </li>
                 <li>
                     <p class="degree">Kotlin para principiantes</p>
@@ -252,8 +272,8 @@
             </ul>
         </div>
         <div class="projects">
-            <h2>Proyectos</h2>
-            <ul>
+            <h2><span class="toggle-button" id="toggle-icon6">&#9660;</span> Proyectos</h2>
+            <ul class="projectsClass">
                 <li>
                     <p class="degree">Fin CFGS Desarrollo de Aplicaciones Multiplataformas (DAM)</p>
                     <p class="institution">Mesa Interactiva</p>
@@ -289,6 +309,9 @@
             </ul>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

@@ -41,7 +41,7 @@ body {
 
 /* Sección de información personal */
 .personal-info {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .personal-info h2 {
@@ -54,6 +54,48 @@ body {
     font-size: 16px;
     margin: 0;
     color: #666;
+}
+
+.toggle-button {
+    color: #007bff;
+    font-size: 18px;
+    vertical-align: center;
+}
+
+.toggle-button:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.experienceClass {
+    display: none;
+}
+
+.educationClass {
+    display: none;
+}
+
+.educationCCClass {
+    display: none;
+}
+
+.educationSCClass {
+    display: none;
+}
+
+.projectsClass {
+    display: none;
+}
+
+.info-content {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 /* Estilos de enlaces */
@@ -137,6 +179,7 @@ a {
 .education li {
     margin-bottom: 15px;
 }
+
 .education p {
     margin: 2px;
 }
@@ -170,6 +213,7 @@ a {
     padding: 0;
     margin: 0;
 }
+
 .projects p {
     margin: 2px;
 }
