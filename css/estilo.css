@@ -70,6 +70,12 @@ body {
     display: none;
 }
 
+.margen-izquierdo {
+    color: #666565 !important;
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
+}
+
 .experienceClass {
     display: none;
 }
