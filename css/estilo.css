@@ -100,6 +100,10 @@ body {
     display: none;
 }
 
+.hackatonsClass {
+    display: none;
+}
+
 .info-content {
     display: none;
 }
@@ -242,5 +246,43 @@ a {
 }
 
 .projects li .dates {
+    color: #999;
+}
+
+/* Hackatons */
+.hackatons {
+    margin-bottom: 10px;
+}
+
+.hackatons h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hackatons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hackatons p {
+    margin: 2px;
+}
+
+.hackatons li {
+    margin-bottom: 15px;
+}
+
+.hackatons li .degree {
+    font-weight: bold;
+    color: #333;
+}
+
+.hackatons li .institution {
+    color: #666;
+}
+
+.hackatons li .dates {
     color: #999;
 }

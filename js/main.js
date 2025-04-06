@@ -6,6 +6,7 @@ const toggleButton4 = document.getElementById('toggle-icon4');
 const toggleButton5 = document.getElementById('toggle-icon5');
 const toggleButton6 = document.getElementById('toggle-icon6');
 const toggleButton7 = document.getElementById('toggle-icon7');
+const toggleButton8 = document.getElementById('toggle-icon8');
 const infoContent = document.querySelector('.info-content');
 const experienceContent = document.querySelector('.experienceClass');
 const educationContent = document.querySelector('.educationClass');
@@ -13,6 +14,7 @@ const educationCCContent = document.querySelector('.educationCCClass');
 const educationSCContent = document.querySelector('.educationSCClass');
 const educationCerContent = document.querySelector('.educationCertificacionClass');
 const projectsContent = document.querySelector('.projectsClass');
+const hackatonContent = document.querySelector('.hackatonsClass');
 
 toggleButton1.addEventListener('click', function () {
     infoContent.classList.toggle('show');
@@ -67,5 +69,13 @@ toggleButton7.addEventListener('click', function () {
     toggleButton7.innerHTML = '&#9660;';
     if (educationCerContent.classList.contains('show')) {
         toggleButton7.innerHTML = '&#9658;';
+    }
+});
+
+toggleButton8.addEventListener('click', function () {
+    hackatonContent.classList.toggle('show');
+    toggleButton8.innerHTML = '&#9660;';
+    if (hackatonContent.classList.contains('show')) {
+        toggleButton8.innerHTML = '&#9658;';
     }
 });
