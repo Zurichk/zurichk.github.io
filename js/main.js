@@ -1,494 +1,494 @@
 // Contenido HTML embebido para funcionar tanto local como en producción
-const htmlContent = {
-    header: `<div class="header">
-    <h1>Adrián Espí</h1>
-    <p>Developer & Data analyst</p>
+// const htmlContent = {
+//     header: `<div class="header">
+//     <h1>Adrián Espí</h1>
+//     <p>Developer & Data analyst</p>
 
-    <p class="description">Apasionado de la tecnología y en constante aprendizaje. Mi formación en Desarrollo de
-        Aplicaciones Multiplataforma y Automatización y Robótica Industrial me ha proporcionado una sólida base
-        de habilidades en el campo de la informática y la robótica. Siempre estoy al tanto de las últimas
-        tendencias y desarrollos, ya que mi pasión es mantenerme actualizado en este mundo en constante
-        evolución. Disfruto resolviendo problemas y encuentro gran satisfacción al crear soluciones innovadoras.
-        Estoy entusiasmado por encontrar nuevas oportunidades de crecimiento profesional en el
-        apasionante mundo de la tecnología.</p>
-</div>`,
-    personalInfo: `<div class="personal-info">
-    <h2><span class="toggle-button" id="toggle-icon1">&#9660;</span> Información Personal </h2>
+//     <p class="description">Apasionado de la tecnología y en constante aprendizaje. Mi formación en Desarrollo de
+//         Aplicaciones Multiplataforma y Automatización y Robótica Industrial me ha proporcionado una sólida base
+//         de habilidades en el campo de la informática y la robótica. Siempre estoy al tanto de las últimas
+//         tendencias y desarrollos, ya que mi pasión es mantenerme actualizado en este mundo en constante
+//         evolución. Disfruto resolviendo problemas y encuentro gran satisfacción al crear soluciones innovadoras.
+//         Estoy entusiasmado por encontrar nuevas oportunidades de crecimiento profesional en el
+//         apasionante mundo de la tecnología.</p>
+// </div>`,
+//     personalInfo: `<div class="personal-info">
+//     <h2><span class="toggle-button" id="toggle-icon1">&#9660;</span> Información Personal </h2>
 
-    <div class="info-content">
-        <p>Dirección: Alicante, España</p>
-        <p>Teléfono: 618984169</p>
-        <p>Email: <a href="mailto:zurich85aep@gmail.com">zurich85aep@gmail.com</a></p>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/channel/UCa9c3-J_onhqTzerBmbXWBw" target="_blank">
-                <img src="iconos/youtube.png" alt="YouTube" class="icon">
-            </a>
-            <a href="https://www.linkedin.com/in/adri%C3%A1n-esp%C3%AD-pe%C3%B1a-a74304185/" target="_blank">
-                <img src="iconos/linkedin.png" alt="LinkedIn" class="icon">
-            </a>
-        </div>
-    </div>
-</div>`,
-    experience: `<div class="experience">
-    <h2> <span class="toggle-button" id="toggle-icon2">&#9660;</span> Experiencia Laboral</h2>
-    <ul class="experienceClass">
-        <li>
-            <p class="job-title">Desarrollador Business Central</p>
-            <p class="company">Davisa</p>
-            <p class="dates">Diciembre 2023 - Actualmente</p>
-            <br>
-            <ul class="margen-izquierdo">
-                <b>Desempeñando funciones como:</b>
-                <li>
-                    Programación en código AL para implementar funcionalidades o realizar modificaciones en el
-                    sistema, incluyendo la creación de
-                    extensiones, informes y personalización de formularios.
-                </li>
-                <li>
-                    Participar en pruebas de funcionalidades desarrolladas, identificando y documentando errores
-                    o
-                    problemas, y colaborar en la validación de que las nuevas implementaciones cumplan con los
-                    requisitos del usuario. Incluyendo solucion de incidencias en la certificacion de
-                    verticales.
-                </li>
-                <li>
-                    Contribuir en la creación de documentación técnica, como manuales de usuario o documentación
-                    de
-                    diseño técnico, incluyendo la actualización de documentación existente.
-                </li>
-                <li>
-                    Participar en distintos procesos de migracion de Nav a Business Central Cloud.
-                    Desde la migracion de datos(utilizando el paquete de Configuración), hasta la adaptacion de
-                    extensiones y personalizaciones(utilizando la herramiento txttoal).
-                </li>
-                <li>
-                    <b>Proyectos más importantes realizados:</b>
-                    <ul>
-                        <li>Automatización de Buzon de correo, Generacion de factura de compra automaticamente
-                            en Business central. (Tecnologías: PowerAutomate(Eventos del buzón),
-                            Python(Analisis de OCR y AI, para obtecion de datos del pdf(Desplegado en PAAS),
-                            Business Central(exponer servicios web)))</li>
-                        <li>Integración de Business Central con Api de ArrowSphere para gestionar la compra de
-                            licencias de software.</li>
-                        <li>Integración de Business Central con otras aplicaciones empresariales, como Revit,
-                            MsProject, etc.
-                            Desarrollando y exponiendo servicios web y desarrollo en Revit(WPF/.NET)</li>
-                        <li>Integración de Business Central con FActuraE, generando xml y xsig con firma
-                            mediante
-                            azure function(Java) verificada por FaCe. Permitiendo tanto exportar como importar
-                            estos ficheros. </li>
-                    </ul>
-                </li>
+//     <div class="info-content">
+//         <p>Dirección: Alicante, España</p>
+//         <p>Teléfono: 618984169</p>
+//         <p>Email: <a href="mailto:zurich85aep@gmail.com">zurich85aep@gmail.com</a></p>
+//         <div class="social-icons">
+//             <a href="https://www.youtube.com/channel/UCa9c3-J_onhqTzerBmbXWBw" target="_blank">
+//                 <img src="iconos/youtube.png" alt="YouTube" class="icon">
+//             </a>
+//             <a href="https://www.linkedin.com/in/adri%C3%A1n-esp%C3%AD-pe%C3%B1a-a74304185/" target="_blank">
+//                 <img src="iconos/linkedin.png" alt="LinkedIn" class="icon">
+//             </a>
+//         </div>
+//     </div>
+// </div>`,
+//     experience: `<div class="experience">
+//     <h2> <span class="toggle-button" id="toggle-icon2">&#9660;</span> Experiencia Laboral</h2>
+//     <ul class="experienceClass">
+//         <li>
+//             <p class="job-title">Desarrollador Business Central</p>
+//             <p class="company">Davisa</p>
+//             <p class="dates">Diciembre 2023 - Actualmente</p>
+//             <br>
+//             <ul class="margen-izquierdo">
+//                 <b>Desempeñando funciones como:</b>
+//                 <li>
+//                     Programación en código AL para implementar funcionalidades o realizar modificaciones en el
+//                     sistema, incluyendo la creación de
+//                     extensiones, informes y personalización de formularios.
+//                 </li>
+//                 <li>
+//                     Participar en pruebas de funcionalidades desarrolladas, identificando y documentando errores
+//                     o
+//                     problemas, y colaborar en la validación de que las nuevas implementaciones cumplan con los
+//                     requisitos del usuario. Incluyendo solucion de incidencias en la certificacion de
+//                     verticales.
+//                 </li>
+//                 <li>
+//                     Contribuir en la creación de documentación técnica, como manuales de usuario o documentación
+//                     de
+//                     diseño técnico, incluyendo la actualización de documentación existente.
+//                 </li>
+//                 <li>
+//                     Participar en distintos procesos de migracion de Nav a Business Central Cloud.
+//                     Desde la migracion de datos(utilizando el paquete de Configuración), hasta la adaptacion de
+//                     extensiones y personalizaciones(utilizando la herramiento txttoal).
+//                 </li>
+//                 <li>
+//                     <b>Proyectos más importantes realizados:</b>
+//                     <ul>
+//                         <li>Automatización de Buzon de correo, Generacion de factura de compra automaticamente
+//                             en Business central. (Tecnologías: PowerAutomate(Eventos del buzón),
+//                             Python(Analisis de OCR y AI, para obtecion de datos del pdf(Desplegado en PAAS),
+//                             Business Central(exponer servicios web)))</li>
+//                         <li>Integración de Business Central con Api de ArrowSphere para gestionar la compra de
+//                             licencias de software.</li>
+//                         <li>Integración de Business Central con otras aplicaciones empresariales, como Revit,
+//                             MsProject, etc.
+//                             Desarrollando y exponiendo servicios web y desarrollo en Revit(WPF/.NET)</li>
+//                         <li>Integración de Business Central con FActuraE, generando xml y xsig con firma
+//                             mediante
+//                             azure function(Java) verificada por FaCe. Permitiendo tanto exportar como importar
+//                             estos ficheros. </li>
+//                     </ul>
+//                 </li>
 
-            </ul>
-        </li>
-        <li>
-            <p class="job-title">Desarrollador Junior Business Central</p>
-            <p class="company">Lãberit</p>
-            <p class="dates">Julio 2023 - Diciembre 2023</p>
-            <p> Escribir código en AL (lenguaje de programación de Business Central) para implementar
-                funcionalidades simples o realizar modificaciones en el sistema, incluyendo la creación de
-                extensiones, informes básicos y personalización de formularios.</p>
-        </li>
-        <li>
-            <p class="job-title">FCT (Practicas empresa) CFGS</p>
-            <p class="company">Lãberit</p>
-            <p class="dates">Marzo 2023 - Junio 2023</p>
-            <p>FCT del Ciclo Grado Superior Desarrollo de Aplicaciones Multiplataforma, FCT basada en formación
-                de Business Central, 400horas de formación
-                como desarrollador. Realizando varios cursos en <a
-                    href="https://learn.microsoft.com/es-es/users/AdrinEspPea-7665" target="_blank">Microsoft
-                    Learn</a>. </p>
-        </li>
-        <li>
-            <p class="job-title">Soporte Técnico</p>
-            <p class="company">Bumerania Robotics</p>
-            <p class="dates">Junio 2022 - Noviembre 2022</p>
-            <p>Instalación, Configuración y Reparación de robots colaborativos, Desarrollador de aplicaciones
-                para robots en
-                kotlin, Automatización en Python con Selenium.</p>
-        </li>
-        <li>
-            <p class="job-title">Supervisor Técnico de Teleasistencia</p>
-            <p class="company">Cruz Roja Española</p>
-            <p class="dates">Octubre 2019 - Julio 2021</p>
-            <p>Coordinación de tareas del departamento Técnico (realización rutas tecnicos, manuales,
-                formaciones)</p>
-        </li>
-        <li>
-            <p class="job-title">Técnico de Teleasistencia</p>
-            <p class="company">Cruz Roja Española</p>
-            <p class="dates">Junio 2007 - Octubre 2019</p>
-            <p>Instalación y Reparación de dispositivos de Teleasistencia</p>
-        </li>
-        <li>
-            <p class="job-title">FCT (Practicas empresa) CFGM</p>
-            <p class="company">Domo3 Instalación, S.L.L</p>
-            <p class="dates">Abril 2007 - Junio 2007</p>
-            <p>FCT del Ciclo Grado Medio Equipos e instalaciones electrotécnicas.</p>
-        </li>
-        <li>
-            <p class="job-title">Asesoría laboral y contable (Administrativo en formación)</p>
-            <p class="company">Bernardo Sánchez Giménez</p>
-            <p class="dates">Abril 2005 - Mayo 2006</p>
-            <p>Administrativo en formación realizando tareas de asesoría laboral (movimientos en
-                S.S (altas,bajas), contratos), contabilidad</p>
-        </li>
-        <li>
-            <p class="job-title">Técnico informático (Soporte TI en formación)</p>
-            <p class="company">Servicio Informático de Asistencia Técnico Integral, (SIATI, S.L.)</p>
-            <p class="dates">Diciembre 2003 - Julio 2004 </p>
-            <p>Soporte Técnico (Montaje, Configuración y Reparación de equipos informaticos)</p>
-        </li>
-    </ul>
-</div>`,
-    educationAcademica: `<div class="education">
-    <h2><span class="toggle-button" id="toggle-icon3">&#9660;</span> Formación Académica</h2>
-    <ul class="educationClass">
-        <li>
-            <p class="degree">Especialización en Administración de recursos y servicios en la nube</p>
-            <p class="institution">IES Mare Nostrum</p>
-            <p class="dates">Actualmente</p>
-        </li>
-        <!-- <li>
-            <p class="degree">Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Web
-                (DAW)</p>
-            <p class="institution">IES Mare Nostrum</p>
-            <p class="dates">Actualmente</p>
-            <p>Unicamente cursando asignaturas en las que me interesa profundizar:</p>
-        </li> -->
-        <li>
-            <p class="degree">Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Multiplataformas
-                (DAM)</p>
-            <p class="institution">IES Doctor Balmis (Alicante)</p>
-            <p class="dates">Septiembre 2021- Junio 2024</p>
-            <p>Conocimientos en Lenguajes de programación (.NET, (C#, WPF), Java, Kotlin), Web (HTML, CSS,
-                JavaScript), Bases de datos
-                (MySQL, Oracle).
-            </p>
-        </li>
-        <li>
-            <p class="degree">Especialización en Inteligencia Artificial y Bigdata</p>
-            <p class="institution">IES Severo Ochoa (Elche)</p>
-            <p class="dates">Septiembre 2021 - Junio 2022</p>
-            <p>Conocimientos en Pentaho, Nifi, Hadoop/HDFS, Sqoop, Flume, Hive, Kafka, Spark, Docker, Git,
-                Python (pandas, numpy, matplotlib, scikit learn, SciPy, OpenCv), Web Scraping, Dataiku, Redes
-                Neuronales, Lenguaje R, Visualización de datos en R, Power BI, Bases de datos (SQL, NoSQL).
-                <i><a href="titulos/Reglada/iaBigdata.jpg" target="_blank" rel="rob">Certificado</a></i>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Ciclo Formativo de Grado Superior en Automatización y Robótica Industrial (ARI)
-            </p>
-            <p class="institution">IES José Cavanilles (Alicante)</p>
-            <p class="dates">Septiembre 2019 - Junio 2021</p>
-            <p>Conocimientos en programación de PLC's/Robots (Siemens, Omron, Schneider, ABB) Variadores,
-                Motores, Diseño y montaje de Cuadros Electricos, Aplicaciones(Eplan, TiaPortal, CX-Programmer,
-                GrafcetStudio, RobotStudio). <i><a href="titulos/Reglada/titulorobotica.jpg" target="_blank"
-                        rel="rob">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Ciclo Formativo de Grado Medio Equipos e instalaciones electrotécnicas</p>
-            <p class="institution">IES Canastell (San Vicente del Raspeig)</p>
-            <p class="dates">Septiembre 2004- Junio 2007</p>
-            <p><i><a href="titulos/Reglada/TituloElectronica.jpg" target="_blank" rel="elec">Certificado</a></i>
-            </p>
-        </li>
-    </ul>
-</div>`,
-    educationComplementariaCertificado: `<div class="education">
-    <h2><span class="toggle-button" id="toggle-icon4">&#9660;</span> Formación complementaria con certificado
-    </h2>
-    <ul class="educationCCClass">
-        <li>
-            <p class="degree">Bootcamp de GitHub Actions</p>
-            <p class="institution">CodigoFacilito <i><a href="https://codigofacilito.com/" target="_blank"
-                            rel="codigofacilito">Web</a></i></p>
-            <p class="dates">Junio 2025</p>
-            <p><i><a href="titulos/Otra/Certificado - Bootcamp de GitHub Actions.pdf" target="_blank"
-                            rel="pySpark">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">pySpark: Domina la ingeniería de datos</p>
-            <p class="dates">Mayo 2025</p>
-            <p><i><a href="titulos/Otra/pySpark.pdf" target="_blank" rel="pySpark">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Inteligencia Artificial: Entrenamiento de Modelos</p>
-            <p class="institution">V-Valley <i><a href="https://www.v-valley.com/es/v-valley-academy/"
-                            target="_blank" rel="v-valley-academy">Web</a></i></p>
-            <p class="dates">Noviembre/Diciembre 2024</p>
-        </li>
-        <li>
-            <p class="degree">Curso Python Full Stack (IBM SkillsBuild)</p>
-            <p class="institution">IBM y Bejob <i><a
-                            href="https://sb-auth.skillsbuild.org/login?client_id=yl-internal-adopter&learning_path=https:%2F%2Fskills.yourlearning.ibm.com%2Factivity%2FPLAN-11E327F507A8%3Futm_campaign%3Dibmpython-08-abr-24-totalinscritos-comienzo%26utm_medium%3Demail%26utm_source%3Dclientify&redirect_uri=https:%2F%2Fskills.yourlearning.ibm.com%2Foauth%2Fcallback&referer=skills.yourlearning.ibm.com&response_type=code&scope=openid%20email&utm_campaign=ibmpython-08-abr-24-totalinscritos-comienzo&utm_medium=email&utm_source=clientify"
-                            target="_blank" rel="ibmbejob">Web</a></i></p>
-            <p class="dates">60 horas - Abril 2024</p>
-            <p><i><a href="titulos/Otra/IBM/diplomapython.pdf" target="_blank" rel="Chpt">Certificado</a></i>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Machine Learning aplicado usando python</p>
-            <p class="institution">Indice Formacion <i><a
-                            href="https://indiceformacion.com/formacion-en-abierto/" target="_blank"
-                            rel="indice">Web</a></i></p>
-            <p class="dates">150 horas - Abril 2024</p>
-            <p><i><a href="titulos/Otra/MLpython.pdf" target="_blank" rel="Chpt">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">ChatGPT TOTAL: De Cero a Experto. Midjourney, GPT 4 & Más!</p>
-            <p class="institution">Udemy <i><a
-                            href="https://www.udemy.com/share/108wH63@zf2veZjQYZTvMkMtmA0tzcFBnI0Iw0zmI_gaBt61XGNMLZNZEDyrwCPsRalN7n92/"
-                            target="_blank" rel="udemy">Web</a></i></p>
-            <p class="dates">16 horas - Diciembre 2023</p>
-        </li>
-        <li>
-            <p class="degree">Jetpack Compose: Curso definitivo desde 0 [2023]</p>
-            <p class="institution">Udemy <i><a
-                            href="https://www.udemy.com/course/jetpack-compose-desde-0-a-profesional/"
-                            target="_blank" rel="udemy">Web</a></i></p>
-            <p class="dates">12 horas - Diciembre 2023</p>
-            <p><i><a href="titulos/Otra/Udemy/Jetpack Compose Arist/udemyjetpackarist.jpg" target="_blank"
-                            rel="JPC">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Inteligencia Artificial Aplicada a la empresa</p>
-            <p class="institution">Indice Formacion <i><a href="https://indiceformacion.com/" target="_blank"
-                            rel="atu">Web</a></i></p>
-            <p class="dates">250 horas - Agosto 2023</p>
-            <p><i><a href="titulos/Otra/iaempresa.pdf" target="_blank" rel="IAaE">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">JavaScript Básico</p>
-            <p class="institution">OpenBootCamp <a href="https://campus.open-bootcamp.com/">Web</a>
-            </p>
-            <p class="dates">Junio 2023</p>
-            <p><i><a href="titulos/Otra/OB/javascript.pdf" target="_blank" rel="javascript">Certificado</a></i>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Microsoft Build: Desafío de .NET</p>
-            <p class="institution">Microsoft Learn <i><a
-                            href="https://learn.microsoft.com/es-es/users/cloudskillschallenge/collections/moqrtqmjz7d8?WT.mc_id=cloudskillschallenge_150aae80-e46b-4a07-894a-5247fcdfcbad"
-                            target="_blank" rel="atu">Web</a></i></p>
-            <p>Crear aplicaciones para Web, dispositivos móviles, el escritorio y mucho más con .NET y C#. </p>
-        </li>
-        <li>
-            <p class="degree">Blockchain: aplicaciones en empresas</p>
-            <p class="institution">Centre Formació Folgado <i><a href="https://campusvirtual.cffolgado.com/"
-                            target="_blank" rel="atu">Web</a></i></p>
-            <p class="dates">30 horas - 2023</p>
-            <p><i><a href="titulos/Otra/Blockchain.pdf" target="_blank" rel="Blockchain">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Machine Learning Aplicado (con Python)</p>
-            <p class="institution">Fundación Confemetal</p>
-            <p class="dates">150 horas - 2022</p>
-            <p>Conocimientos: Librerías python: numpy, panda, theano, tensorflow, scikit learn,
-                keras,nmatplotlib, Redes Neuronales (Aprendizaje Supervisado y No Supervisado) <i><a
-                            href="titulos/Otra/mlpy.pdf" target="_blank" rel="mlpy">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">AWS Academy Graduate - AWS Academy Cloud Foundations</p>
-            <p class="institution">AWS Academy</p>
-            <p class="dates">20 horas - 2022</p>
-            <p><i><a href="titulos/Otra/AWS/aws.pdf" target="_blank" rel="aws">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Certificado Profesional de Soporte de Tecnologías de la Información de Google</p>
-            <p class="institution"> Coursera Programa de Becas Google en colaboración con Fundae y Sepe</p>
-            <p class="dates">600 horas - 2021</p>
-            <p><i><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TLMBDSWN6WCU"
-                            target="_blank" rel="Google">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Autómatas programables</p>
-            <p class="institution">Grupo Atu Formación <i><a href="https://aulavirtualatu.com" target="_blank"
-                            rel="atu">Web</a></i></p>
-            <p class="dates">60 horas - 2021</p>
-            <p><i><a href="titulos/Otra/AUTÓMATAS_PROGRAMABLES.pdf" target="_blank"
-                            rel="AUTÓMATAS_PROGRAMABLES">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Seguridad Informática y Firma digital</p>
-            <p class="institution">Educ@tic GAP PUE S.L.</p>
-            <p class="dates">60 horas - 2020</p>
-            <p><i><a href="titulos/Otra/firmadigital.JPG" target="_blank"
-                            rel="firmadigital.JPG">Certificado</a></i>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Primeros Auxilios y Prevención de Riesgos Laborales</p>
-            <p class="institution">Cruz Roja Española.</p>
-            <p class="dates">50 horas - 2011/Actualización 2019</p>
-        </li>
-        <li>
-            <p class="degree">Lenguaje de Signos</p>
-            <p class="institution">FOREM P.V.</p>
-            <p class="dates">30 horas - 2006</p>
-        </li>
-        <li>
-            <p class="degree">Diseño y Creación de páginas web</p>
-            <p class="institution">FOREM P.V.</p>
-            <p class="dates">30 horas - 2005</p>
-        </li>
-        <li>
-            <p class="degree">Informática Aplicada a la Gestión Comercial. Bases de datos. Access </p>
-            <p class="institution">CEP</p>
-            <p class="dates">50 horas - 2005</p>
-            <p><i><a href="titulos/Otra/gestioncomercial.jpg" target="_blank"
-                            rel="gestioncomercial">Certificado</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Programador de aplicaciones informáticas (Visual Basic / C / Java / Html)</p>
-            <p class="institution">CEP</p>
-            <p class="dates">659 horas - 2005</p>
-            <p><i><a href="titulos/Otra/programador.pdf" target="_blank" rel="programador">Certificado</a></i>
-            </p>
-        </li>
-    </ul>
-</div>`,
-    educationComplementariaSinCertificado: `<div class="education">
-    <h2><span class="toggle-button" id="toggle-icon5">&#9660;</span> Formación complementaria sin certificado
-    </h2>
-    <ul class="educationSCClass">
-        <li>
-            <p class="degree">Introducción a Big Data</p>
-            <p class="institution">OpenBootCamp <a
-                    href="https://campus.open-bootcamp.com/cursos/19/leccion/400">Link</a>
-            </p>
-            <p class="dates">Julio 2023</p>
-        </li>
-        <li>
-            <p class="degree">Dart & Introducción a Flutter</p>
-            <p class="institution">Udemy <a href="https://www.udemy.com/course/dart-flutter-gratis/">Link</a>
-            </p>
-            <p class="dates">Julio 2023</p>
-        </li>
-        <li>
-            <p class="degree">Kotlin para principiantes</p>
-            <p class="institution">Udemy <a href="https://www.udemy.com/course/curso-basico-kotlin/">Link</a>
-            </p>
-            <p class="dates">Junio 2023</p>
-        </li>
-    </ul>
-</div>`,
-    certificacionesOficiales: `<div class="education">
-    <h2><span class="toggle-button" id="toggle-icon7">&#9660;</span> Certificaciones Oficiales</h2>
-    <ul class="educationCertificacionClass">
-        <li>
-            <p class="degree">MB-800: Consultor funcional de Microsoft Dynamics 365 Business Central</p>
-            <p class="institution">Microsoft</p>
-            <i>Actualmente: Preparando la certificación.</i>
-        </li>
-        <li>
-            <p class="degree">Microsoft Certified: Azure AI Fundamentals</p>
-            <p class="institution">Microsoft</p>
-            <i><a href="https://learn.microsoft.com/api/credentials/share/es-es/AdrinEspPea-7665/6FFDFA17AF2CE3D1?sharingId=25DDA23463F19E36"
-                    target="_blank" rel="No disponible">Certificación</a></i>
-        </li>
-    </ul>
-</div>`,
-    projects: `<div class="projects">
-    <h2><span class="toggle-button" id="toggle-icon6">&#9660;</span> Proyectos</h2>
-    <ul class="projectsClass">
-        <li>
-            <p class="degree">Fin CFGS Desarrollo de Aplicaciones Multiplataformas (DAM)</p>
-            <p class="institution">Mesa Interactiva</p>
-            <p>Gestión de restaurante para pedidos desde un mesa interactiva (Aplicación de gestión de productos
-                desarrollada en java, Aplicación de mesa interactiva desarrollada en WPF/.NET/C#, Aplicación
-                movil para recibir los pedidos desarrollada en Kotlin para Android, Api Rest de Base de Datos,
-                alojada en servidor LAMP en Azure.) Manipulación de datos obtenidos con pySpark. <i><a
-                        href="proyectos/dam/dam.pdf" target="_blank" rel="docuIABIG">Proyecto</a></i>
-                -
-                <i><a href="https://www.youtube.com/watch?v=yQ6O2iGvVcM&t=18s" target="_blank"
-                        rel="No disponible">Demostración</a></i>
-            </p>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Fin Especialización CFGS Inteligencia Artificial y Bigdata</p>
-            <p class="institution">EDA Bomberos San Francisco</p>
-            <p>Ejemplo Almacenamiento en S3, Limpieza de datos con pySpark, persistencia en S3 y Visualización
-                en PowerBI. <i><a href="proyectos/iabig/Docu.pdf" target="_blank" rel="docuIABIG">Enunciado y
-                        Proceso</a></i> - <i><a href="https://www.youtube.com/watch?v=27WfKCy-lrU&t=107s"
-                        target="_blank" rel="videoIABIG">Demostración</a></i></p>
-            </p>
-        </li>
-        <li>
-            <p class="degree">Fin CFGS Automatización y Robotica Industrial (ARI)</p>
-            <p class="institution">Almacén Automatizado</p>
-            <p>Proyecto de Simulación de Almacén Automatizado (FactoryIO(Plantilla Warehouse modificada) +
-                Siemens 1200 + Tia Portal). Proceso de Carga/Descarga Simultanea con Gestión de Usuarios desde
-                HMI. <i><a href="proyectos/ari/ari.pdf" target="_blank" rel="docuAri">Proyecto</a></i> - <i><a
-                        href="https://www.youtube.com/watch?v=bMwUcEVM-XU" target="_blank"
-                        rel="videoARI">Demostración</a></i></p>
-        </li>
-        <li>
-            <p class="degree">Proyectos GitHub <a href="https://github.com/Zurichk" target="_blank"
-                    rel="PersonalGithub">Personal Github</a></p>
-            <p class="institution">Traductor de Extesiones Business Central a Español</p>
-            <p>Aplicación desarrollada en Python, utilizando Flask, mediante la cual podemos traducir
-                automaticamente a Español un archivo xlf, generado por Business Central para gestionar sus
-                traducciones. Actualmente la aplicación conecta con el Api de google translator, añadir la
-                etiqueta [target] con la traducción. Desplegada en render en un contenedor docker. <i><a
-                        href="https://rendbctrans.onrender.com/" target="_blank"
-                        rel="docuAri">Aplicación</a></i> </p>
-        </li>
-        <li>
-            <p class="degree">Manuales Business Central </p>
-            <p class="institution"> <i><a href="https://zurichk85.github.io/businesscentral/" target="_blank"
-                        rel="docuAri">Web</a></i> </p>
-        </li>
-    </ul>
-</div>`,
-    hackatons: `<div class="hackatons">
-    <h2><span class="toggle-button" id="toggle-icon8">&#9660;</span> Hackatons & Desafios</h2>
-    <ul class="hackatonsClass">
-        <li>
-            <p class="degree">Hackaton Data Science organizado por Nuwe y Schneider</p>
-            <p class="institution">Nuwe y Schneider</p>
-            <p>El último fin de semana de Marzo de 2025 participé en mi primer hackathon de Data Science,
-                organizado por Nuwe y Schneider, ¡y fue una experiencia increíble! Después de tres años sin
-                tocar poco o nada relacionado con IA y Big Data desde que terminé mi CFGS, decidí lanzarme a la
-                aventura para ver si aún recordaba lo aprendido.
-                La experiencia fue muy enriquecedora y, aunque termine en el puesto 12, ¡no me quejo!😅 Me hizo
-                recordar lo apasionante que fue esta formación y ha despertado mi motivación para seguir
-                formándome en esta materia.
-                Sin duda, participar en hackathons es una excelente forma de poner en práctica conocimientos y,
-                además, de conocer a profesionales que comparten tu misma pasión. Ahora, mi objetivo es sacar un
-                poco de tiempo para profundizar más en Data Science y participar en futuros eventos.
-                ¡Gracias a Nuwe y Schneider por organizar este reto y a todo el equipo por la experiencia tan
-                agradable!
-                Para el próximo intentaré repasar un poquito antes 😀 <i><a
-                        href="titulos/Otra/Hackatons/iberian-2025-data-science-challenge-certificate.pdf"
-                        target="_blank" rel="docuIABIG">Certificado</a></i>
-                -
-                <i><a href="https://nuwe.io/es/hackathons" target="_blank" rel="No disponible">Web</a></i>
-            </p>
-            </p>
-        </li>
-    </ul>
-</div>`
-};
+//             </ul>
+//         </li>
+//         <li>
+//             <p class="job-title">Desarrollador Junior Business Central</p>
+//             <p class="company">Lãberit</p>
+//             <p class="dates">Julio 2023 - Diciembre 2023</p>
+//             <p> Escribir código en AL (lenguaje de programación de Business Central) para implementar
+//                 funcionalidades simples o realizar modificaciones en el sistema, incluyendo la creación de
+//                 extensiones, informes básicos y personalización de formularios.</p>
+//         </li>
+//         <li>
+//             <p class="job-title">FCT (Practicas empresa) CFGS</p>
+//             <p class="company">Lãberit</p>
+//             <p class="dates">Marzo 2023 - Junio 2023</p>
+//             <p>FCT del Ciclo Grado Superior Desarrollo de Aplicaciones Multiplataforma, FCT basada en formación
+//                 de Business Central, 400horas de formación
+//                 como desarrollador. Realizando varios cursos en <a
+//                     href="https://learn.microsoft.com/es-es/users/AdrinEspPea-7665" target="_blank">Microsoft
+//                     Learn</a>. </p>
+//         </li>
+//         <li>
+//             <p class="job-title">Soporte Técnico</p>
+//             <p class="company">Bumerania Robotics</p>
+//             <p class="dates">Junio 2022 - Noviembre 2022</p>
+//             <p>Instalación, Configuración y Reparación de robots colaborativos, Desarrollador de aplicaciones
+//                 para robots en
+//                 kotlin, Automatización en Python con Selenium.</p>
+//         </li>
+//         <li>
+//             <p class="job-title">Supervisor Técnico de Teleasistencia</p>
+//             <p class="company">Cruz Roja Española</p>
+//             <p class="dates">Octubre 2019 - Julio 2021</p>
+//             <p>Coordinación de tareas del departamento Técnico (realización rutas tecnicos, manuales,
+//                 formaciones)</p>
+//         </li>
+//         <li>
+//             <p class="job-title">Técnico de Teleasistencia</p>
+//             <p class="company">Cruz Roja Española</p>
+//             <p class="dates">Junio 2007 - Octubre 2019</p>
+//             <p>Instalación y Reparación de dispositivos de Teleasistencia</p>
+//         </li>
+//         <li>
+//             <p class="job-title">FCT (Practicas empresa) CFGM</p>
+//             <p class="company">Domo3 Instalación, S.L.L</p>
+//             <p class="dates">Abril 2007 - Junio 2007</p>
+//             <p>FCT del Ciclo Grado Medio Equipos e instalaciones electrotécnicas.</p>
+//         </li>
+//         <li>
+//             <p class="job-title">Asesoría laboral y contable (Administrativo en formación)</p>
+//             <p class="company">Bernardo Sánchez Giménez</p>
+//             <p class="dates">Abril 2005 - Mayo 2006</p>
+//             <p>Administrativo en formación realizando tareas de asesoría laboral (movimientos en
+//                 S.S (altas,bajas), contratos), contabilidad</p>
+//         </li>
+//         <li>
+//             <p class="job-title">Técnico informático (Soporte TI en formación)</p>
+//             <p class="company">Servicio Informático de Asistencia Técnico Integral, (SIATI, S.L.)</p>
+//             <p class="dates">Diciembre 2003 - Julio 2004 </p>
+//             <p>Soporte Técnico (Montaje, Configuración y Reparación de equipos informaticos)</p>
+//         </li>
+//     </ul>
+// </div>`,
+//     educationAcademica: `<div class="education">
+//     <h2><span class="toggle-button" id="toggle-icon3">&#9660;</span> Formación Académica</h2>
+//     <ul class="educationClass">
+//         <li>
+//             <p class="degree">Especialización en Administración de recursos y servicios en la nube</p>
+//             <p class="institution">IES Mare Nostrum</p>
+//             <p class="dates">Actualmente</p>
+//         </li>
+//         <!-- <li>
+//             <p class="degree">Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Web
+//                 (DAW)</p>
+//             <p class="institution">IES Mare Nostrum</p>
+//             <p class="dates">Actualmente</p>
+//             <p>Unicamente cursando asignaturas en las que me interesa profundizar:</p>
+//         </li> -->
+//         <li>
+//             <p class="degree">Ciclo Formativo de Grado Superior Desarrollo de Aplicaciones Multiplataformas
+//                 (DAM)</p>
+//             <p class="institution">IES Doctor Balmis (Alicante)</p>
+//             <p class="dates">Septiembre 2021- Junio 2024</p>
+//             <p>Conocimientos en Lenguajes de programación (.NET, (C#, WPF), Java, Kotlin), Web (HTML, CSS,
+//                 JavaScript), Bases de datos
+//                 (MySQL, Oracle).
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Especialización en Inteligencia Artificial y Bigdata</p>
+//             <p class="institution">IES Severo Ochoa (Elche)</p>
+//             <p class="dates">Septiembre 2021 - Junio 2022</p>
+//             <p>Conocimientos en Pentaho, Nifi, Hadoop/HDFS, Sqoop, Flume, Hive, Kafka, Spark, Docker, Git,
+//                 Python (pandas, numpy, matplotlib, scikit learn, SciPy, OpenCv), Web Scraping, Dataiku, Redes
+//                 Neuronales, Lenguaje R, Visualización de datos en R, Power BI, Bases de datos (SQL, NoSQL).
+//                 <i><a href="titulos/Reglada/iaBigdata.jpg" target="_blank" rel="rob">Certificado</a></i>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Ciclo Formativo de Grado Superior en Automatización y Robótica Industrial (ARI)
+//             </p>
+//             <p class="institution">IES José Cavanilles (Alicante)</p>
+//             <p class="dates">Septiembre 2019 - Junio 2021</p>
+//             <p>Conocimientos en programación de PLC's/Robots (Siemens, Omron, Schneider, ABB) Variadores,
+//                 Motores, Diseño y montaje de Cuadros Electricos, Aplicaciones(Eplan, TiaPortal, CX-Programmer,
+//                 GrafcetStudio, RobotStudio). <i><a href="titulos/Reglada/titulorobotica.jpg" target="_blank"
+//                         rel="rob">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Ciclo Formativo de Grado Medio Equipos e instalaciones electrotécnicas</p>
+//             <p class="institution">IES Canastell (San Vicente del Raspeig)</p>
+//             <p class="dates">Septiembre 2004- Junio 2007</p>
+//             <p><i><a href="titulos/Reglada/TituloElectronica.jpg" target="_blank" rel="elec">Certificado</a></i>
+//             </p>
+//         </li>
+//     </ul>
+// </div>`,
+//     educationComplementariaCertificado: `<div class="education">
+//     <h2><span class="toggle-button" id="toggle-icon4">&#9660;</span> Formación complementaria con certificado
+//     </h2>
+//     <ul class="educationCCClass">
+//         <li>
+//             <p class="degree">Bootcamp de GitHub Actions</p>
+//             <p class="institution">CodigoFacilito <i><a href="https://codigofacilito.com/" target="_blank"
+//                             rel="codigofacilito">Web</a></i></p>
+//             <p class="dates">Junio 2025</p>
+//             <p><i><a href="titulos/Otra/Certificado - Bootcamp de GitHub Actions.pdf" target="_blank"
+//                             rel="pySpark">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">pySpark: Domina la ingeniería de datos</p>
+//             <p class="dates">Mayo 2025</p>
+//             <p><i><a href="titulos/Otra/pySpark.pdf" target="_blank" rel="pySpark">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Inteligencia Artificial: Entrenamiento de Modelos</p>
+//             <p class="institution">V-Valley <i><a href="https://www.v-valley.com/es/v-valley-academy/"
+//                             target="_blank" rel="v-valley-academy">Web</a></i></p>
+//             <p class="dates">Noviembre/Diciembre 2024</p>
+//         </li>
+//         <li>
+//             <p class="degree">Curso Python Full Stack (IBM SkillsBuild)</p>
+//             <p class="institution">IBM y Bejob <i><a
+//                             href="https://sb-auth.skillsbuild.org/login?client_id=yl-internal-adopter&learning_path=https:%2F%2Fskills.yourlearning.ibm.com%2Factivity%2FPLAN-11E327F507A8%3Futm_campaign%3Dibmpython-08-abr-24-totalinscritos-comienzo%26utm_medium%3Demail%26utm_source%3Dclientify&redirect_uri=https:%2F%2Fskills.yourlearning.ibm.com%2Foauth%2Fcallback&referer=skills.yourlearning.ibm.com&response_type=code&scope=openid%20email&utm_campaign=ibmpython-08-abr-24-totalinscritos-comienzo&utm_medium=email&utm_source=clientify"
+//                             target="_blank" rel="ibmbejob">Web</a></i></p>
+//             <p class="dates">60 horas - Abril 2024</p>
+//             <p><i><a href="titulos/Otra/IBM/diplomapython.pdf" target="_blank" rel="Chpt">Certificado</a></i>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Machine Learning aplicado usando python</p>
+//             <p class="institution">Indice Formacion <i><a
+//                             href="https://indiceformacion.com/formacion-en-abierto/" target="_blank"
+//                             rel="indice">Web</a></i></p>
+//             <p class="dates">150 horas - Abril 2024</p>
+//             <p><i><a href="titulos/Otra/MLpython.pdf" target="_blank" rel="Chpt">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">ChatGPT TOTAL: De Cero a Experto. Midjourney, GPT 4 & Más!</p>
+//             <p class="institution">Udemy <i><a
+//                             href="https://www.udemy.com/share/108wH63@zf2veZjQYZTvMkMtmA0tzcFBnI0Iw0zmI_gaBt61XGNMLZNZEDyrwCPsRalN7n92/"
+//                             target="_blank" rel="udemy">Web</a></i></p>
+//             <p class="dates">16 horas - Diciembre 2023</p>
+//         </li>
+//         <li>
+//             <p class="degree">Jetpack Compose: Curso definitivo desde 0 [2023]</p>
+//             <p class="institution">Udemy <i><a
+//                             href="https://www.udemy.com/course/jetpack-compose-desde-0-a-profesional/"
+//                             target="_blank" rel="udemy">Web</a></i></p>
+//             <p class="dates">12 horas - Diciembre 2023</p>
+//             <p><i><a href="titulos/Otra/Udemy/Jetpack Compose Arist/udemyjetpackarist.jpg" target="_blank"
+//                             rel="JPC">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Inteligencia Artificial Aplicada a la empresa</p>
+//             <p class="institution">Indice Formacion <i><a href="https://indiceformacion.com/" target="_blank"
+//                             rel="atu">Web</a></i></p>
+//             <p class="dates">250 horas - Agosto 2023</p>
+//             <p><i><a href="titulos/Otra/iaempresa.pdf" target="_blank" rel="IAaE">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">JavaScript Básico</p>
+//             <p class="institution">OpenBootCamp <a href="https://campus.open-bootcamp.com/">Web</a>
+//             </p>
+//             <p class="dates">Junio 2023</p>
+//             <p><i><a href="titulos/Otra/OB/javascript.pdf" target="_blank" rel="javascript">Certificado</a></i>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Microsoft Build: Desafío de .NET</p>
+//             <p class="institution">Microsoft Learn <i><a
+//                             href="https://learn.microsoft.com/es-es/users/cloudskillschallenge/collections/moqrtqmjz7d8?WT.mc_id=cloudskillschallenge_150aae80-e46b-4a07-894a-5247fcdfcbad"
+//                             target="_blank" rel="atu">Web</a></i></p>
+//             <p>Crear aplicaciones para Web, dispositivos móviles, el escritorio y mucho más con .NET y C#. </p>
+//         </li>
+//         <li>
+//             <p class="degree">Blockchain: aplicaciones en empresas</p>
+//             <p class="institution">Centre Formació Folgado <i><a href="https://campusvirtual.cffolgado.com/"
+//                             target="_blank" rel="atu">Web</a></i></p>
+//             <p class="dates">30 horas - 2023</p>
+//             <p><i><a href="titulos/Otra/Blockchain.pdf" target="_blank" rel="Blockchain">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Machine Learning Aplicado (con Python)</p>
+//             <p class="institution">Fundación Confemetal</p>
+//             <p class="dates">150 horas - 2022</p>
+//             <p>Conocimientos: Librerías python: numpy, panda, theano, tensorflow, scikit learn,
+//                 keras,nmatplotlib, Redes Neuronales (Aprendizaje Supervisado y No Supervisado) <i><a
+//                             href="titulos/Otra/mlpy.pdf" target="_blank" rel="mlpy">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">AWS Academy Graduate - AWS Academy Cloud Foundations</p>
+//             <p class="institution">AWS Academy</p>
+//             <p class="dates">20 horas - 2022</p>
+//             <p><i><a href="titulos/Otra/AWS/aws.pdf" target="_blank" rel="aws">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Certificado Profesional de Soporte de Tecnologías de la Información de Google</p>
+//             <p class="institution"> Coursera Programa de Becas Google en colaboración con Fundae y Sepe</p>
+//             <p class="dates">600 horas - 2021</p>
+//             <p><i><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TLMBDSWN6WCU"
+//                             target="_blank" rel="Google">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Autómatas programables</p>
+//             <p class="institution">Grupo Atu Formación <i><a href="https://aulavirtualatu.com" target="_blank"
+//                             rel="atu">Web</a></i></p>
+//             <p class="dates">60 horas - 2021</p>
+//             <p><i><a href="titulos/Otra/AUTÓMATAS_PROGRAMABLES.pdf" target="_blank"
+//                             rel="AUTÓMATAS_PROGRAMABLES">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Seguridad Informática y Firma digital</p>
+//             <p class="institution">Educ@tic GAP PUE S.L.</p>
+//             <p class="dates">60 horas - 2020</p>
+//             <p><i><a href="titulos/Otra/firmadigital.JPG" target="_blank"
+//                             rel="firmadigital.JPG">Certificado</a></i>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Primeros Auxilios y Prevención de Riesgos Laborales</p>
+//             <p class="institution">Cruz Roja Española.</p>
+//             <p class="dates">50 horas - 2011/Actualización 2019</p>
+//         </li>
+//         <li>
+//             <p class="degree">Lenguaje de Signos</p>
+//             <p class="institution">FOREM P.V.</p>
+//             <p class="dates">30 horas - 2006</p>
+//         </li>
+//         <li>
+//             <p class="degree">Diseño y Creación de páginas web</p>
+//             <p class="institution">FOREM P.V.</p>
+//             <p class="dates">30 horas - 2005</p>
+//         </li>
+//         <li>
+//             <p class="degree">Informática Aplicada a la Gestión Comercial. Bases de datos. Access </p>
+//             <p class="institution">CEP</p>
+//             <p class="dates">50 horas - 2005</p>
+//             <p><i><a href="titulos/Otra/gestioncomercial.jpg" target="_blank"
+//                             rel="gestioncomercial">Certificado</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Programador de aplicaciones informáticas (Visual Basic / C / Java / Html)</p>
+//             <p class="institution">CEP</p>
+//             <p class="dates">659 horas - 2005</p>
+//             <p><i><a href="titulos/Otra/programador.pdf" target="_blank" rel="programador">Certificado</a></i>
+//             </p>
+//         </li>
+//     </ul>
+// </div>`,
+//     educationComplementariaSinCertificado: `<div class="education">
+//     <h2><span class="toggle-button" id="toggle-icon5">&#9660;</span> Formación complementaria sin certificado
+//     </h2>
+//     <ul class="educationSCClass">
+//         <li>
+//             <p class="degree">Introducción a Big Data</p>
+//             <p class="institution">OpenBootCamp <a
+//                     href="https://campus.open-bootcamp.com/cursos/19/leccion/400">Link</a>
+//             </p>
+//             <p class="dates">Julio 2023</p>
+//         </li>
+//         <li>
+//             <p class="degree">Dart & Introducción a Flutter</p>
+//             <p class="institution">Udemy <a href="https://www.udemy.com/course/dart-flutter-gratis/">Link</a>
+//             </p>
+//             <p class="dates">Julio 2023</p>
+//         </li>
+//         <li>
+//             <p class="degree">Kotlin para principiantes</p>
+//             <p class="institution">Udemy <a href="https://www.udemy.com/course/curso-basico-kotlin/">Link</a>
+//             </p>
+//             <p class="dates">Junio 2023</p>
+//         </li>
+//     </ul>
+// </div>`,
+//     certificacionesOficiales: `<div class="education">
+//     <h2><span class="toggle-button" id="toggle-icon7">&#9660;</span> Certificaciones Oficiales</h2>
+//     <ul class="educationCertificacionClass">
+//         <li>
+//             <p class="degree">MB-800: Consultor funcional de Microsoft Dynamics 365 Business Central</p>
+//             <p class="institution">Microsoft</p>
+//             <i>Actualmente: Preparando la certificación.</i>
+//         </li>
+//         <li>
+//             <p class="degree">Microsoft Certified: Azure AI Fundamentals</p>
+//             <p class="institution">Microsoft</p>
+//             <i><a href="https://learn.microsoft.com/api/credentials/share/es-es/AdrinEspPea-7665/6FFDFA17AF2CE3D1?sharingId=25DDA23463F19E36"
+//                     target="_blank" rel="No disponible">Certificación</a></i>
+//         </li>
+//     </ul>
+// </div>`,
+//     projects: `<div class="projects">
+//     <h2><span class="toggle-button" id="toggle-icon6">&#9660;</span> Proyectos</h2>
+//     <ul class="projectsClass">
+//         <li>
+//             <p class="degree">Fin CFGS Desarrollo de Aplicaciones Multiplataformas (DAM)</p>
+//             <p class="institution">Mesa Interactiva</p>
+//             <p>Gestión de restaurante para pedidos desde un mesa interactiva (Aplicación de gestión de productos
+//                 desarrollada en java, Aplicación de mesa interactiva desarrollada en WPF/.NET/C#, Aplicación
+//                 movil para recibir los pedidos desarrollada en Kotlin para Android, Api Rest de Base de Datos,
+//                 alojada en servidor LAMP en Azure.) Manipulación de datos obtenidos con pySpark. <i><a
+//                         href="proyectos/dam/dam.pdf" target="_blank" rel="docuIABIG">Proyecto</a></i>
+//                 -
+//                 <i><a href="https://www.youtube.com/watch?v=yQ6O2iGvVcM&t=18s" target="_blank"
+//                         rel="No disponible">Demostración</a></i>
+//             </p>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Fin Especialización CFGS Inteligencia Artificial y Bigdata</p>
+//             <p class="institution">EDA Bomberos San Francisco</p>
+//             <p>Ejemplo Almacenamiento en S3, Limpieza de datos con pySpark, persistencia en S3 y Visualización
+//                 en PowerBI. <i><a href="proyectos/iabig/Docu.pdf" target="_blank" rel="docuIABIG">Enunciado y
+//                         Proceso</a></i> - <i><a href="https://www.youtube.com/watch?v=27WfKCy-lrU&t=107s"
+//                         target="_blank" rel="videoIABIG">Demostración</a></i></p>
+//             </p>
+//         </li>
+//         <li>
+//             <p class="degree">Fin CFGS Automatización y Robotica Industrial (ARI)</p>
+//             <p class="institution">Almacén Automatizado</p>
+//             <p>Proyecto de Simulación de Almacén Automatizado (FactoryIO(Plantilla Warehouse modificada) +
+//                 Siemens 1200 + Tia Portal). Proceso de Carga/Descarga Simultanea con Gestión de Usuarios desde
+//                 HMI. <i><a href="proyectos/ari/ari.pdf" target="_blank" rel="docuAri">Proyecto</a></i> - <i><a
+//                         href="https://www.youtube.com/watch?v=bMwUcEVM-XU" target="_blank"
+//                         rel="videoARI">Demostración</a></i></p>
+//         </li>
+//         <li>
+//             <p class="degree">Proyectos GitHub <a href="https://github.com/Zurichk" target="_blank"
+//                     rel="PersonalGithub">Personal Github</a></p>
+//             <p class="institution">Traductor de Extesiones Business Central a Español</p>
+//             <p>Aplicación desarrollada en Python, utilizando Flask, mediante la cual podemos traducir
+//                 automaticamente a Español un archivo xlf, generado por Business Central para gestionar sus
+//                 traducciones. Actualmente la aplicación conecta con el Api de google translator, añadir la
+//                 etiqueta [target] con la traducción. Desplegada en render en un contenedor docker. <i><a
+//                         href="https://rendbctrans.onrender.com/" target="_blank"
+//                         rel="docuAri">Aplicación</a></i> </p>
+//         </li>
+//         <li>
+//             <p class="degree">Manuales Business Central </p>
+//             <p class="institution"> <i><a href="https://zurichk85.github.io/businesscentral/" target="_blank"
+//                         rel="docuAri">Web</a></i> </p>
+//         </li>
+//     </ul>
+// </div>`,
+//     hackatons: `<div class="hackatons">
+//     <h2><span class="toggle-button" id="toggle-icon8">&#9660;</span> Hackatons & Desafios</h2>
+//     <ul class="hackatonsClass">
+//         <li>
+//             <p class="degree">Hackaton Data Science organizado por Nuwe y Schneider</p>
+//             <p class="institution">Nuwe y Schneider</p>
+//             <p>El último fin de semana de Marzo de 2025 participé en mi primer hackathon de Data Science,
+//                 organizado por Nuwe y Schneider, ¡y fue una experiencia increíble! Después de tres años sin
+//                 tocar poco o nada relacionado con IA y Big Data desde que terminé mi CFGS, decidí lanzarme a la
+//                 aventura para ver si aún recordaba lo aprendido.
+//                 La experiencia fue muy enriquecedora y, aunque termine en el puesto 12, ¡no me quejo!😅 Me hizo
+//                 recordar lo apasionante que fue esta formación y ha despertado mi motivación para seguir
+//                 formándome en esta materia.
+//                 Sin duda, participar en hackathons es una excelente forma de poner en práctica conocimientos y,
+//                 además, de conocer a profesionales que comparten tu misma pasión. Ahora, mi objetivo es sacar un
+//                 poco de tiempo para profundizar más en Data Science y participar en futuros eventos.
+//                 ¡Gracias a Nuwe y Schneider por organizar este reto y a todo el equipo por la experiencia tan
+//                 agradable!
+//                 Para el próximo intentaré repasar un poquito antes 😀 <i><a
+//                         href="titulos/Otra/Hackatons/iberian-2025-data-science-challenge-certificate.pdf"
+//                         target="_blank" rel="docuIABIG">Certificado</a></i>
+//                 -
+//                 <i><a href="https://nuwe.io/es/hackathons" target="_blank" rel="No disponible">Web</a></i>
+//             </p>
+//             </p>
+//         </li>
+//     </ul>
+// </div>`
+// };
 
 // Función para cargar contenido HTML embebido
-function loadEmbeddedHTML(containerId, contentKey) {
-    document.getElementById(containerId).innerHTML = htmlContent[contentKey];
-}
+// function loadEmbeddedHTML(containerId, contentKey) {
+//     document.getElementById(containerId).innerHTML = htmlContent[contentKey];
+// }
 
 // Cargar todas las secciones al cargar la página
 document.addEventListener('DOMContentLoaded', function() {
-    loadEmbeddedHTML('header-container', 'header');
-    loadEmbeddedHTML('personal-info-container', 'personalInfo');
-    loadEmbeddedHTML('experience-container', 'experience');
-    loadEmbeddedHTML('education-academica-container', 'educationAcademica');
-    loadEmbeddedHTML('education-complementaria-certificado-container', 'educationComplementariaCertificado');
-    loadEmbeddedHTML('education-complementaria-sin-certificado-container', 'educationComplementariaSinCertificado');
-    loadEmbeddedHTML('certificaciones-oficiales-container', 'certificacionesOficiales');
-    loadEmbeddedHTML('projects-container', 'projects');
-    loadEmbeddedHTML('hackatons-container', 'hackatons');
+    // loadEmbeddedHTML('header-container', 'header');
+    // loadEmbeddedHTML('personal-info-container', 'personalInfo');
+    // loadEmbeddedHTML('experience-container', 'experience');
+    // loadEmbeddedHTML('education-academica-container', 'educationAcademica');
+    // loadEmbeddedHTML('education-complementaria-certificado-container', 'educationComplementariaCertificado');
+    // loadEmbeddedHTML('education-complementaria-sin-certificado-container', 'educationComplementariaSinCertificado');
+    // loadEmbeddedHTML('certificaciones-oficiales-container', 'certificacionesOficiales');
+    // loadEmbeddedHTML('projects-container', 'projects');
+    // loadEmbeddedHTML('hackatons-container', 'hackatons');
 
     // Agregar los event listeners para los toggles
     const toggleButton1 = document.getElementById('toggle-icon1');
